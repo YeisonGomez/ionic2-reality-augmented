@@ -1,5 +1,15 @@
 {
   "name": "test",
   "app_id": "",
-  "type": "ionic-angular"
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ],
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }
