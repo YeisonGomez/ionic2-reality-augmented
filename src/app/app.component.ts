@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {  } from 'jsartoolkit5';
 
 import { HomePage } from '../pages/home/home';
 
@@ -57,7 +58,7 @@ export class MyApp {
               var loader = new THREE.OBJLoader();
 
               loader.load(
-                'https://threejs.org/examples/obj/male02/male02.obj',
+                'https://drive.google.com/open?id=1fB5U7FHfA8aCA4ntlG_8pbaYtm1EOT5e',
                 function ( object ) {
                   console.log(object);
                   human = object;
@@ -90,9 +91,8 @@ export class MyApp {
                   if(human){
                     human.rotation.y += 0.01;
                     human.rotation.x += 0.01;
-                    console.log(cont);
                     cont++;
-                    if(cont > 50){
+                    if(cont > 100){
                       human.traverse( function ( child ) {
                        if ( child instanceof THREE.Mesh ) {
                             child.material.color.setHex(0xFF0000);
